@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: user-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${app.keycloak.serverUrl}/realms/${app.keycloak.realm}
+server:
+  port: 9090
+  servlet:
+    context-path: /users
+
+app:
+  keycloak:
+    adminClientId: admin-cli
+    adminClientSecret: j1IbMPB8I1HuUblQ7V9XYU7jHiLXagKj
+    realm: Dev
+    serverUrl: http://localhost:8080
+
