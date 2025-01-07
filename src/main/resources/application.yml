@@ -17,4 +17,3 @@ app:
     adminClientSecret: j1IbMPB8I1HuUblQ7V9XYU7jHiLXagKj
     realm: Dev
     serverUrl: http://localhost:8080
-
